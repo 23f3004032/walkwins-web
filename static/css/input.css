@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark-bg text-white font-sans;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-neon {
+    @apply relative px-8 py-3 bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+  
+  .btn-neon:hover {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.5), 0 0 40px rgba(184, 41, 255, 0.3);
+  }
+  
+  .card-dark {
+    @apply bg-dark-card border border-dark-border rounded-xl p-6 shadow-xl;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "kingsman-space-services",
+  "version": "1.0.0",
+  "description": "Kingsman Space & Services Landing Page",
+  "main": "app.py",
+  "scripts": {
+    "build-css": "tailwindcss -i ./static/css/input.css -o ./static/css/tailwind.css --watch",
+    "build-css-prod": "tailwindcss -i ./static/css/input.css -o ./static/css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "keywords": ["flask", "tailwind", "landing-page"],
+  "author": "Kingsman Space & Services"
+}
